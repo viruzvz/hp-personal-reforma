@@ -21,7 +21,29 @@ img {
 }
 
 @font-face {
-  font-family: "impactreg";
-  src: url("../../assets/fonts/impactreg.eot");
-  src: local('impactreg'), url('../../assets/fonts/impactreg.woff') format('woff'), url('../../assets/fonts/impactreg.ttf') format('truetype');
+  font-family: 'poxel-font';
+  src:
+    url('../../assets/fonts/poxel-font.woff') format('woff'),
+    url('../../assets/fonts/poxel-font.woff2') format('woff2'),
+    url('../../assets/fonts/poxel-font.svg#poxel-font') format('svg'),
+    url('../../assets/fonts/poxel-font.eot'),
+    url('../../assets/fonts/poxel-font.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/poxel-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Golden-Plains-Demo';
+  src:
+    url('../../assets/fonts/Golden-Plains-Demo.woff') format('woff'),
+    url('../../assets/fonts/Golden-Plains-Demo.woff2') format('woff2'),
+    url('../../assets/fonts/Golden-Plains-Demo.svg#Golden-Plains-Demo') format('svg'),
+    url('../../assets/fonts/Golden-Plains-Demo.eot'),
+    url('../../assets/fonts/Golden-Plains-Demo.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/Golden-Plains-Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

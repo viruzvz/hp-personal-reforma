@@ -1,15 +1,28 @@
 .title--hero {
-  font-size: 120px;
-  font-family: impactreg, 'Arial Narrow Bold', sans-serif;
+  font-size: 70px;
+  font-family: 'poxel-font', 'Arial Narrow Bold', sans-serif;
   color: white;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 15px;
-  font-style: italic;
   line-height: 0.9;
+  text-shadow: 4px 4px 2px rgba(68, 68, 68, 1);
 
   @include media-breakpoint-down(xs) {
-    font-size: 90px;
+    font-size: 70px;
+  }
+}
+
+.subtitle--hero {
+  font-size: 40px;
+  font-family: 'Golden-Plains-Demo', 'Arial Narrow Bold', sans-serif;
+  color: white;
+  margin: 0;
+  line-height: 0.9;
+  text-shadow: 1px 1px 2px rgba(68, 68, 68, 1);
+  text-align: right;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 30px;
   }
 }
 
@@ -47,16 +60,16 @@
   background-image: url();
 }
 
-.hero-item {
-  background-image: url('../../images/hero.jpg');
-}
+// .hero-item {
+//   background-image: url('../../images/hero.jpg');
+// }
 
-.hero-item--3 {
-  background-image: url('../../images/man.png');
-}
+// .hero-item--3 {
+//   background-image: url('../../images/man.png');
+// }
 
 .hero-item--2 {
-  background-image: url('../../images/hero2.jpg');
+  background-image: url('../../images/parallax-rodape.jpg');
   background-size: cover;
 }
 

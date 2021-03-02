@@ -1,0 +1,37 @@
+.btn-float {
+  border-radius: 4px;
+  position: fixed;
+  color: #fff;
+  padding: 10px;
+  opacity: 0.6;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: $primary;
+    opacity: 1;
+  }
+
+  @include media-breakpoint-up(md) {
+    i {
+      font-size: $pounds;
+      color: #fff;
+    }
+  }
+}
+
+.btn-totop {
+  background-color: $primary;
+  bottom: 30px;
+  right: 30px;
+}
+
+.btn-cotacao {
+  background-color: $success;
+  bottom: 30px;
+  right: 70px;
+
+  @include media-breakpoint-up(md) {
+    right: 110px;
+  }
+}
