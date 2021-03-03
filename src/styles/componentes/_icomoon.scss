@@ -27,6 +27,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close-48 {
+  &::before {
+    content: "\e912";
+  }
+}
+
+.icon-home-48 {
+  &::before {
+    content: "\e913";
+  }
+}
+
+.icon-print-48 {
+  &::before {
+    content: "\e914";
+  }
+}
+
+.icon-share-48 {
+  &::before {
+    content: "\e915";
+  }
+}
+
+.icon-search-48 {
+  &::before {
+    content: "\e911";
+  }
+}
+
 .icon-chevron-down-48 {
   &::before {
     content: "\e90d";

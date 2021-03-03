@@ -20,6 +20,18 @@
   }
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: $primary;
+    background-color: $cousin;
+    border-color: $cousin;
+  }
+}
+
 .btn-totop {
   background-color: $primary;
   bottom: 30px;
