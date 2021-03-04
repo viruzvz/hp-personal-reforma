@@ -31,6 +31,10 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%);
 }
 
+.bg-gradient--grayrev {
+  background: linear-gradient(180deg, rgba(238, 238, 238, 1) 0%, rgba(78, 78, 78, 1) 100%);
+}
+
 .c-primary {
   color: $primary !important;
 }
@@ -70,6 +74,18 @@
 
 .control-logo {
   width: 400px;
+}
+
+.spaceCol-xl {
+  margin-bottom: 30px;
+}
+
+.sp-two {
+  padding: 80px 0 50px;
+}
+
+.border-top--white {
+  border-top: 1px solid white;
 }
 
 .size-auto,

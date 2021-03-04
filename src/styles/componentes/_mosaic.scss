@@ -9,6 +9,10 @@
   width: calc(20% - 1px);
   //margin: auto;
   overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    width: calc(50% - 1px);
+  }
 }
 
 .mosaic_img {

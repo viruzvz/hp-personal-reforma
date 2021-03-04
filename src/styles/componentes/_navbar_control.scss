@@ -138,3 +138,14 @@
   color: $secondary !important;
   border-bottom: 5px solid $secondary;
 }
+
+.nav-float {
+  position: absolute;
+  z-index: 3;
+  padding-left: 15px;
+  padding-top: 15px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}

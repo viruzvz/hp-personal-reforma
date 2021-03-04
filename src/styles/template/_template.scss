@@ -34,6 +34,10 @@ img {
   font-display: swap;
 }
 
+.fontFamily-poxel {
+  font-family: poxel-font;
+}
+
 @font-face {
   font-family: 'Golden-Plains-Demo';
   src:
@@ -46,4 +50,8 @@ img {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+.fontFamily-golden {
+  font-family: Golden-Plains-Demo;
 }

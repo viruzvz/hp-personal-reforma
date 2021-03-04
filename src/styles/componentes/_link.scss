@@ -36,11 +36,14 @@
   border: 1px solid $primary;
   color: $primary;
   padding: 2px 8px;
+  font-size: 2rem;
+  margin-left: 15px;
+  margin-right: 15px;
 
-  @include media-breakpoint-up(md) {
-    font-size: 2rem;
-    margin-left: 15px;
-    margin-right: 15px;
+  @include media-breakpoint-down(md) {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 1.1rem;
   }
 
   &:last-child {
@@ -123,6 +126,14 @@
   }
 }
 
+.link-deep--pinterest {
+  color: white;
+
+  &:hover {
+    color: #e60023;
+  }
+}
+
 // social para fundos claros
 
 .link-clear--whatsapp {
@@ -149,6 +160,14 @@
   }
 }
 
+.link-clear--pinterest {
+  color: #e60023;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
 // links para fundos escuros
 .link-deep {
   color: white;
@@ -167,16 +186,33 @@
 }
 // links para fundos claros
 .link-img {
-  color: $tertiary;
   transition: all 0.5s ease-in-out;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  img {
+  img,
+  .caption {
     transition: all 0.5s ease-in-out;
     transform: scale(1);
   }
 
+  .caption {
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 1px 10px black;
+    bottom: -20px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
   &:hover {
-    img {
+    img,
+    .caption {
       transform: scale(1.1);
     }
 

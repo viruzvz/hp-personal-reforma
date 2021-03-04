@@ -32,6 +32,18 @@
   }
 }
 
+.btn-pinterest {
+  color: #fff;
+  background-color: #e60023;
+  border-color: #e60023;
+
+  &:hover {
+    color: $primary;
+    background-color: $cousin;
+    border-color: $cousin;
+  }
+}
+
 .btn-totop {
   background-color: $primary;
   bottom: 30px;

@@ -1,39 +1,85 @@
-section.space_content-y.page-section.backbg.backbg-pic1(role='Porque taurus?')
+section
+  #carouselExampleCaptions.carousel.carousel-theme.slide(data-ride='carousel')
+    ul.navbar_control-list.navbar_control-link--white.nav-float
+      include nav.pug
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleCaptions' data-slide-to='0')
+      li(data-target='#carouselExampleCaptions' data-slide-to='1')
+      li(data-target='#carouselExampleCaptions' data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='https://unsplash.it/1500/600?random&seed=0' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h5.title--hero PERSONAL REFORMA
+          p.subtitle--hero Interiores e Aquitetura
+      .carousel-item
+        img.d-block.w-100(src='https://unsplash.it/1500/600?random&seed=1' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h5.title--hero PERSONAL REFORMA
+          p.subtitle--hero Interiores e Aquitetura
+      .carousel-item
+        img.d-block.w-100(src='https://unsplash.it/1500/600?random&seed=2' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h5.title--hero PERSONAL REFORMA
+          p.subtitle--hero Interiores e Aquitetura
+    a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+section.space_content-y.backbg.backbg-pic1
   .container#porquetaurus
     .row
       .col-xl-12.text-center.space_title-b
-        h2.title-xl.c-tertiary Serviços
-      .col-xl-4.text-center.c-tertiary.mb-2
-        a.link.link-img(href='#')
-          img.img-fluid(src="images/v.svg", alt="Segurança na Taurus")
-          .my-2.title.title-m Consultorias
+        h2.title-xl.c-primary SERVIÇOS
+      .col-xl-4.text-center.c-tertiary.spaceCol-xl
+        a.link.link-img.c-primary(href='#')
+          img.img-fluid(src="images/v.svg", alt="CONSULTORIAS")
+          .caption
+            | CONSULTORIAS
         //- p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
-      .col-xl-4.text-center.c-tertiary.mb-2
-        a.link.link-img(href='#')
-          img.img-fluid(src="images/w.svg", alt="Fidelidade na Taurus")
-          .my-2.title.title-m Projetos
+      .col-xl-4.text-center.c-tertiary.spaceCol-xl
+        a.link.link-img.c-secondary(href='#')
+          img.img-fluid(src="images/w.svg", alt="PROJETOS")
+          .caption
+            | PROJETOS
         //- p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
-      .col-xl-4.text-center.c-tertiary.mb-2
-        a.link.link-img(href='#')
-          img.img-fluid(src="images/x.svg", alt="Facilidade na Taurus")
-          .my-2.title.title-m Obras
+      .col-xl-4.text-center.c-tertiary.spaceCol-xl
+        a.link.link-img.c-tertiary(href='#')
+          img.img-fluid(src="images/x.svg", alt="OBRAS")
+          .caption
+            | OBRAS
         //- p.my-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam obcaecati,
+section.space_content-y.bg-gradient--grayrev.sp-two.border-top--white
+  .container
+    .row
+      .col-xl-6
+        article.mb-4
+          h2.title-xl.c-primary PROJETOS 3D
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum, fugiat autem enim repellendus hic omnis? Laudantium ut ea, sequi tempore provident, excepturi iure quisquam error minus, totam earum numquam.
+          a.btn.btn-primary(href='#') Ver projetos
+      .col-xl-6
+        .embed-responsive.embed-responsive-16by9
+          iframe.embed-responsive-item(src='https://www.youtube.com/embed/_TsXm-x-IGI')
 
-section(role='map')
-  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959.7741979252996!2d-47.89383697076231!3d-15.798849508873012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae901e3a94b%3A0x42808633ed137875!2sAssis%20Chateaubriand%20SRTVS!5e0!3m2!1spt-BR!2sbr!4v1606835938094!5m2!1spt-BR!2sbr' width="100%" height="400" frameborder="0" style="border:0" allowfullscreen="")
 section(role='galeria')
   include ../componentes/gallery.pug
-section.page-section(role='Seguro e Bastidores')
+section
   .hero.hero-item--2.py-4
     .container-fluid.h-100#seguroebastidores
       .row.h-100
         .col-xl-12
           .d-flex.align-items-center.h-100.justify-content-center.flex-column
-            img.img-fluid.control-logo(src="images/u.svg", alt="Seguro e Bastidores")
-            //- h3.text-shadow.white SERVIÇO DE UTILIDADE PÚBLICA
-            //- P.text-shadow.white Seguro e bastidores conta com um vasto conteúdo de ajuda securitária automovel, podendo participar e fazer perguntas. clique aqui e tire suas dúvidas.
+            img.img-fluid.control-logo(src="images/u.svg", alt="Personal Reforma")
+            h3.text-shadow.white Conheça nosso pinterest
+            a.btn.btn-pinterest.link(href='#' title='Visitar pinterest Personal Reforma')
+              i.icon-pinterest-48 &nbsp;
+              | Pinterest Personal Reforma
             //- a.btn.btn-primary(href='http://www.seguroebastidores.com.br' target='_blank') Ir para o site
-section.space_content-y.contact.page-section.backbg.backbg-pic2(role='Contato')
+section(role='map')
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959.7741979252996!2d-47.89383697076231!3d-15.798849508873012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae901e3a94b%3A0x42808633ed137875!2sAssis%20Chateaubriand%20SRTVS!5e0!3m2!1spt-BR!2sbr!4v1606835938094!5m2!1spt-BR!2sbr' width="100%" height="400" frameborder="0" style="border:0" allowfullscreen="")
+section.space_content-y.contact.backbg.backbg-pic2(role='Contato')
   .container#contatos
     .row
       .col-xl-12.text-center.space_title-b
@@ -70,6 +116,10 @@ section.space_content-y.contact.page-section.backbg.backbg-pic2(role='Contato')
           i.icon-local-48
           strong &nbsp; Cep: 70340-906
         p
+          a.link.link-light--tertiary(href='mailto:contato@personalreforma.com.br')
+            i.icon-email-48
+            strong &nbsp; contato@personalreforma.com.br
+        p
           i.icon-clock-48 &nbsp;
           strong Horario de funcionamento de 08h às 12h e 14h às 18h
         p Você também pode entrar em contato por aqui...
@@ -83,7 +133,7 @@ section.space_content-y.contact.page-section.backbg.backbg-pic2(role='Contato')
           span
             a.link.link-clear--instagram(href='#' title='instagram')
               i.icon-instagram-48
-section.space_content-y.bg-cousin(role='Marca Taurus Seguros')
+section.space_content-y.bg-cousin
    .container-fluid.h-100
       .row.h-100
         .col-xl-12
@@ -104,6 +154,10 @@ section.space_content-y.bg-cousin(role='Marca Taurus Seguros')
               i.icon-local-48
             a.link.link-square(href='#' title='E-mail')
               i.icon-email-48
-            a(href='https://www.pinterest.com/pin/create/button/' data-pin-do='buttonBookmark' data-pin-hover data-pin-count)
-            a(data-pin-do='buttonPin' href='https://www.pinterest.com/pin/create/button/?url=http://www.foodiecrush.com/2014/03/filet-mignon-with-porcini-mushroom-compound-butter/&media=https://i.pinimg.com/736x/17/34/8e/17348e163a3212c06e61c41c4b22b87a.jpg&description=So%20delicious!' data-pin-config='beside')
 
+section.py-2
+  .container-fluid
+    .row
+      .col-md-12
+        .d-flex.align-items-center.h-100.justify-content-center.separeted
+          .fb-like(data-href='https://developers.facebook.com/docs/plugins/' data-width='' data-layout='button_count' data-action='like' data-size='small' data-share='true')
