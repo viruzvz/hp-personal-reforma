@@ -88,6 +88,11 @@
   border-top: 1px solid white;
 }
 
+.obj-fit {
+  object-fit: cover;
+  width: 100%;
+}
+
 .size-auto,
 .size-full,
 .size-large,
