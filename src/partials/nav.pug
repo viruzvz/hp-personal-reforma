@@ -1,8 +1,14 @@
 
 li
   a.link.nav-item(href='#') Quem somos?
-li
-  a.link.nav-item(href='#') Serviços
+li.nav-item.dropdown
+  a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+    | Dropdown
+  .dropdown-menu(aria-labelledby='navbarDropdown')
+    a.dropdown-item(href='#') Action
+    a.dropdown-item(href='#') Another action
+    .dropdown-divider
+    a.dropdown-item(href='#') Something else here
 li
   a.link.nav-item(href='blog.html') Blog
 li

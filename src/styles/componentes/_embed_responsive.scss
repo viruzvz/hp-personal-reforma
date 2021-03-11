@@ -22,3 +22,15 @@
   width: 100px;
   height: 55px;
 }
+
+.embed-responsive-display {
+  &::before {
+    padding-top: 40%;
+  }
+
+  @include media-breakpoint-down(md) {
+    &::before {
+      padding-top: 56%;
+    }
+  }
+}
