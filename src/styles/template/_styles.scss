@@ -35,6 +35,14 @@
   background: linear-gradient(180deg, rgba(238, 238, 238, 1) 0%, rgba(78, 78, 78, 1) 100%);
 }
 
+.bg-themesec {
+  background-color: $themesec;
+}
+
+.bg-themeter {
+  background-color: $themeter;
+}
+
 .c-primary {
   color: $primary !important;
 }
@@ -53,6 +61,14 @@
 
 .c-cousin {
   color: $cousin;
+}
+
+.c-themesec {
+  color: $themesec;
+}
+
+.c-themeter {
+  color: $themeter;
 }
 
 .white {
